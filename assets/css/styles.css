@@ -1042,7 +1042,11 @@ input[name="menu"]{display:none}
  display: none;
 z-index: -1;
  
-  transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.on{
+  cursor:pointer
 }
 /* .bottom-nav .active{
 display: block;

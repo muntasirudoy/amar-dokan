@@ -842,39 +842,52 @@
 
 
 
-                        $(document).ready(function(){
+//                         $(document).ready(function(){
                                 
-                                $('.on').click( function(e) {
+//                                 $('.on').click( function(e) {
                                     
-                                    e.preventDefault(); // stops link from making page jump to the top
-                                    e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-                                 $('.plate').toggle();
+//                                     e.preventDefault(); // stops link from making page jump to the top
+//                                     e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+//                                  $('.plate').toggle();
                             
                                     
                                   
                                            
                                     
-                                });
+//                                 });
                                 
-                                $('.plate').click( function(e) {
+//                                 $('.plate').click( function(e) {
                                     
-                                    e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+//                                     e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
                                     
-                                });
+//                                 });
 
                              
 
-                                  $('body').click( function() {
+//                                   $('body').click( function() {
                                     
-                                  $('.plate').hide();
+//                                   $('.plate').hide();
                                
                                 
                                     
-    });
+//     });
     
+// });
+
+
+$(document).ready(function(){
+    $('.on').click(function(event){
+        event.stopPropagation();
+         $(".plate").slideToggle("fast");
+    });
+    $(".plate").on("click", function (event) {
+        event.stopPropagation();
+    });
 });
 
-
+$(document).on("click", function () {
+    $(".plate").hide();
+});
 
 
 
