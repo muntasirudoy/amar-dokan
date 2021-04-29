@@ -53,6 +53,59 @@
 
         </header>
 
+
+
+
+<div class="row">
+  <div class="col-lg-12 col-sm-12 col-md-12">
+        <div class="bottom-nav">
+          <nav class="menu">
+            <input type="radio" name="menu" id="one" checked>
+            <input type="radio" name="menu" id="two">
+            <input type="radio" name="menu" id="three">
+            <div class="list">
+              <div class="link-wrap">
+                <label class="on" for="one">
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                  <span>Home</span>
+                </label>
+                <label for="two">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  <span>cart</span>
+                </label>
+                <label for="three">
+                  <i class="fa fa-mobile" aria-hidden="true"></i>
+                  <span>Contact</span>
+                </label>
+              </div>
+            </div>
+        </nav>
+      
+      <span></span>
+    </nav>
+
+    <div class="plate"></div>
+   
+ </div>
+ <div class="menu-overlay"></div>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- .....................MOBILE  HEADER END ---------------------------------------- -->
 
 
@@ -763,6 +816,99 @@
         <script src="..//amarDokan/assets/js/main.js"></script>
         <script src="..//amarDokan/assets/js/carousel.js"></script>
         <script src="..//amarDokan/assets/js/search.js"></script>
-       
+
+        
+
+
+
+            <script>
+                        
+                        // $(document).ready(function(){
+
+                        // $('.on').click(function(){
+                        //     $('.plate').toggleClass('.active');
+                        // })
+
+                        // $('body').click( function() {
+
+                        // $('.plate').hide();
+
+                        // });
+
+
+                        // })
+
+
+
+
+
+                        $(document).ready(function(){
+                                
+                                $('.on').click( function(e) {
+                                    
+                                    e.preventDefault(); // stops link from making page jump to the top
+                                    e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+                                    $('.plate').toggle(100);
+
+                                           
+                                    
+                                });
+                                
+                                $('.plate').click( function(e) {
+                                    
+                                    e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+                                    
+                                });
+                                
+                                $('body').click( function() {
+                                  
+                                    $('.plate').hide();
+                                    
+    });
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </script>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
 </html>
