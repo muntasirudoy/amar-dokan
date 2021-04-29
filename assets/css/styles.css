@@ -1039,14 +1039,14 @@ input[name="menu"]{display:none}
   position: absolute;
   bottom: 0px;
   background: rgb(250, 249, 249);
-  display: none;
+ display: none;
 z-index: -1;
  
   transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.bottom-nav .active{
-  transform: translateY(0%);
-    transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+/* .bottom-nav .active{
+display: block;
+transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .menu-overlay{
@@ -1055,7 +1055,7 @@ z-index: -1;
   position: absolute;
   bottom: 0px;
  
-}
+} */
 
 
 
