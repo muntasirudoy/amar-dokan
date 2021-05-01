@@ -75,11 +75,11 @@
                   <i class="fa fa-home" aria-hidden="true"></i>
                   <span>Home</span>
                 </label>
-                <label class="on"  for="two">
+                <label class=""  for="two">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <span>cart</span>
                 </label>
-                <label class="on2"  for="three">
+                <label class=""  for="three">
                   <i class="fa fa-mobile" aria-hidden="true"></i>
                   <span>Contact</span>
                 </label>
@@ -224,13 +224,13 @@
 
 <!-- ..........................  CATEGORY START ------------------------------------- -->
 
-
+<button class="on btn "></button>
 
 <section id="home-category">
 <div class="container">
   <div class="section-name">
-    <h6>Top Products</h6>
-    <a href="">View all</a>
+    <h6>Category</h6>
+    <a class="" href="">View all</a>
 </div>
     <div class="row all-category">
       <div class="col-lg-12 col-sm-12 col-md-12">
@@ -1033,15 +1033,15 @@
 
             $(document).ready(function(){
               $('.on').click(function(){
-                $('.plate').toggle('500')
+                $('.plate').toggle('fast')
               })
             }); 
 
             $(document).on('click',function(e){
-                if(!(($(e.target).closest(".plate").length > 0 ) || ($(e.target).closest(".on").length > 0))){
-                $(".plate").hide();
-              }
-              });
+             if(!(($(e.target).closest(".plate").length > 0 ) || ($(e.target).closest(".on").length > 0))){
+              $(".plate").hide();
+          }
+            });
 
          </script>
                         
