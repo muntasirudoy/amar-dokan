@@ -6,11 +6,15 @@
 
 
 :root {
-  --sbtn: #2e2e2e;
-  --sfont: #505050;
-  --sborder:#808080;
-  --safter:#808080;
+  /* section color */
+  --sbtn: #2e2e2e;    /* section button background*/
+  --sfont: #505050;   /* section H6 font color */
+  --sborder:#808080;   /* section H6 border  */
+  --safter:#808080;    /* section after */
   --sbg:#ffffff
+
+  /* product card */
+
 }
 
 
@@ -121,7 +125,7 @@ img {
   line-height: 50px;
   height: 40px!important;
   width: 40px!important;
-  margin-left: 15px;
+  
 }
 .header__toggle {
   display: block;
@@ -1165,10 +1169,15 @@ input[name="menu"]{display:none}
   position: absolute;
   bottom: 0px;
   background: rgb(250, 249, 249);
- display: none;
 z-index: -1;
- 
+ display: none;
+
 }
+
+.active{
+  transform: translateY(0%);
+}
+
 .plate2{
   width: 100%;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);

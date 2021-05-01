@@ -91,7 +91,7 @@
     </nav>
 
     <div class="plate"></div>
-    <div class="plate2"></div>
+   
  </div>
  <div class="menu-overlay"></div>
  </div>
@@ -1029,54 +1029,35 @@
 
 
 
-            <script>
+         <script>
+
+            $(document).ready(function(){
+              $('.on').click(function(){
+                $('.plate').toggle('500')
+              })
+            }); 
+
+            $(document).on('click',function(e){
+                if(!(($(e.target).closest(".plate").length > 0 ) || ($(e.target).closest(".on").length > 0))){
+                $(".plate").hide();
+              }
+              });
+
+         </script>
                         
     
 
-$(document).ready(function(){
-
-    $('.on').click(function(event){
-        event.stopPropagation();
-         $(".plate").slideToggle("fast");
-    });
-    $(".plate").on("click", function (event) {
-        event.stopPropagation();
-    });
-});
-
-$(document).on("click", function () {
-    $(".plate").hide();
-});
-
-
-// window.addEventListener('mouseup', function(event){
-//   var box = document.getElementById('.plate');
-//   if(event.target != box){
-//     box.style.display = 'none';
-    
-//   }
-// })
 
 
 
-
-$(document).ready(function(){
-
-$('.on2').click(function(event){
-    event.stopPropagation();
-     $(".plate2").slideToggle("fast");
-});
-$(".plate2").on("click", function (event) {
-    event.stopPropagation();
-});
-});
-
-$(document).on("click", function () {
-$(".plate2").hide();
-});
- </script>
+              // close modal on clicking close button
+              $('.plate').find('.close').on('click',function(){
+              $(this).parents('.plate').hide();
+              });
 
 
+              // close modal on click outside at anywhere
+             
 
 
 
