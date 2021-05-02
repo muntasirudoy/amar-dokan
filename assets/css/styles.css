@@ -598,21 +598,19 @@ width: 100%;
 
 .cart-nav{
   position: fixed;
-  right: 0;
+  right: 0px;
   top: 30%;
   z-index: 9999;
   width: 80px;
   background: #fff;
-  padding: 13px 15px;
+  padding: 10px;
   border-radius: 3px;
   display: flex;
   cursor: pointer;
   justify-content: space-evenly;
   box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.15);
   transition: .3s all ease;
-}
-.cart-nav:hover{
-  width: 130px;
+  
 }
 
 
@@ -628,13 +626,13 @@ width: 100%;
   font-weight: 500;
 }
 .cart-nav .item-count{
-  font-size: 15px;
-  height: 23px;
-  width: 23px;
+  font-size: 12px;
+  height: 20px;
+  width: 20px;
   color: #ff7979;
   background: #ffcccc;
   text-align: center;
-  line-height: 22px;
+  line-height: 20px;
   border: 1px solid #ffb3b3;
   border-radius: 50%;
 }
