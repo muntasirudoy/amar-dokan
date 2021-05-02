@@ -592,12 +592,52 @@ width: 100%;
   }
 }
 
+/* /////////////////////////////////  CART WITH  COUNTER ///////////// */
+
+
+
+.cart-nav{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 9999;
+  width: 80px;
+  background: #fff;
+  padding: 13px 15px;
+  border-radius: 3px;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-evenly;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.15);
+  transition: .3s all ease;
+}
+.cart-nav:hover{
+  width: 130px;
+}
 
 
 
 
-
-
+.cart-nav .icon{
+  color: #ff7979;
+}
+.cart-nav .icon i{
+  font-size: 20px;
+}
+.cart-nav .icon span{
+  font-weight: 500;
+}
+.cart-nav .item-count{
+  font-size: 15px;
+  height: 23px;
+  width: 23px;
+  color: #ff7979;
+  background: #ffcccc;
+  text-align: center;
+  line-height: 22px;
+  border: 1px solid #ffb3b3;
+  border-radius: 50%;
+}
 
 
 
@@ -824,41 +864,37 @@ color: #FFFFFF;
    
 background: rgb(255, 255, 255);
 border-radius: 5px;
-height: 250px;
+height: 285px;
 display: flex;
 flex-direction: column;
 border: 1px solid rgb(236, 236, 236);
  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1); 
 padding: 10px;
 position: relative;
-
+width: 100%;
 
 }
 #top-products .pcard .img{
   background: rgb(230, 230, 230);
-  height: 250px;
+  height: 140px;
   width: 100%;
 }
-#top-products .pcard .details{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 150px;
 
-}
-
-#top-products .pcard .details .price{
-margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 5px;
+#top-products .pcard img{
  
   width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-#top-products .pcard .details .price .old-price{
-  
+
+
+
+
+
+#top-products .pcard .old-price{
+  width: 50%;
+  float: left;
   height: 30px;
   margin-top: 5px;
   font-size: 16px;
@@ -867,22 +903,13 @@ margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
 }
-#top-products .pcard .details .price .old-price::after{
-  content: '';
-  position: absolute;
-  top: 25%;
-  left: -3px;
-  background: rgb(97, 97, 97);
-  height: 1px;
-  width: 120%;
-  
-}
 
-#top-products .pcard .details .price .new-price{
+
+#top-products .pcard  .new-price{
   
-  
+width: 50px;
+float: right;
   font-size: 24px;
-  color: #333333;
   font-weight: 500;
   color: rgb(59, 59, 59);
   font-family:   sans-serif
