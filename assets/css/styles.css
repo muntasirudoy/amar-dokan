@@ -729,9 +729,32 @@ width: 100%;
 }
 
 
+#home-category .plate{
+  height: 80px;
+
+  box-shadow:0px 0px 6px rgba(0, 0, 0, .2) ;
+  background: white;
+  border-radius: 5px;
+}
+
+#home-category {
+
+ 
+}
+#home-category .col-4{
+  padding: 10px;
+ 
+
+}
 
 
 
+
+
+#home-category .all-category{
+  margin-top: 30px;
+  padding: 0px 10px;
+}
 /* ................................................. */
 
 #home-flashsale {
