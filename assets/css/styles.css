@@ -484,19 +484,15 @@ width: 100%;
 }
 
 
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
-
-
-
-.baheader {
+#home-banner .baheader {
   position:relative;
   text-align:center;
   color:white;
   padding: 15px;
 }
 
-.baheader #banner{
+#home-banner .baheader #banner{
   width: 100%;
   height: 200px;
   background: rgb(253, 253, 253);
@@ -505,12 +501,12 @@ width: 100%;
   overflow: hidden;
 }
 
-.baheader #banner img{
+#home-banner .baheader #banner img{
   width: 100%;
   height: 100%;
 }
 
-.logo {
+#home-banner .logo {
   width:50px;
   fill:white;
   padding-right:15px;
@@ -518,21 +514,24 @@ width: 100%;
   vertical-align: middle;
 }
 
-.inner-header {
+#home-banner .inner-header {
   height:45vh;
   width:100%;
   margin: 0;
   padding: 0;
 }
 
-.flex { /*Flexbox for containers*/
+
+
+
+#home-banner .flex { /*Flexbox for containers*/
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.waves {
+#home-banner .waves {
   position:relative;
   width: 100%;
   height:15vh;
@@ -542,7 +541,7 @@ width: 100%;
   padding: 0px!important;
 }
 
-.content {
+#home-banner .content {
   position:relative;
   height:20vh;
   text-align:center;
@@ -580,17 +579,197 @@ width: 100%;
 }
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
-  .waves {
+  #home-banner .waves {
     height:40px;
     min-height:40px;
   }
-  .content {
+  #home-banner .content {
     height:20vh;
   }
-  h1 {
+  #home-banner h1 {
     font-size:24px;
   }
 }
+
+
+/* //////////////////////   FLASH BANNER  PAGE /////////////////// */
+
+
+
+
+
+
+#flash-banner{
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  
+}
+
+#flash-banner .inner-header {
+ 
+  width:100%;
+  text-align: center;
+  
+
+}
+#flash-banner .inner-header h1{
+  font-weight: 700;
+  font-size: 32px;
+  text-shadow:1px 1px 2px rgba(0, 0, 0, .2) ;
+  
+}
+#flash-banner .baheader {
+  margin-top: 20px;
+  position:relative;
+  color:white;
+   
+}
+
+
+#flash-banner .waves {
+  height: 40px;
+  min-height: 40px;
+  width: 100%;
+}
+
+
+
+#flash-sale{
+  margin-top: 50px;
+}
+
+
+#flash-sale .wcard{
+  display: flex;
+  position: relative;
+  margin: 20px 10px;
+}
+
+#flash-sale .img{
+  width: 40%;
+  border-radius: 10px;
+  height: 130px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#flash-sale .details{
+  border: 1px solid rgb(233, 232, 232);
+ 
+  border-radius: 10px;
+  width: 65%;
+  height: 180px;
+  background: rgb(245, 245, 245);
+}
+
+
+#flash-sale .section-name{
+
+  position: relative;
+  margin-left: 15px;
+  display:flex ;
+  
+}
+
+#flash-sale .section-name::after{
+  content: '';
+  background:var(--safter);
+  height: 1px ;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+}
+
+
+
+#flash-sale .section-name h6{
+  color: var(--sfont);
+  z-index: 111;
+  background: var(--sbg);
+  font-size: 18px;
+  border:1px  solid var(--sborder); 
+  padding: 10px;
+ 
+}
+
+
+#flash-sale .all-items{
+  margin-top: 20px;
+}
+
+
+
+#flash-sale .section-name .left {
+  padding: 5px 15px;
+  border-radius: 5px;
+  line-height: 20px;
+  background: var(--sbtn);
+  z-index: 1111;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  position: absolute;
+  right: 65px;
+  top: 10px;
+}
+#flash-sale .section-name i{
+  font-size: 14px;
+}
+#flash-sale .section-name .right {
+  padding: 5px 15px;
+  border-radius: 5px;
+  line-height: 20px;
+  background: var(--sbtn);
+  z-index: 1111;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+#flash-banner a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ......................................................... */
+
+
+
+
+
+
+
+
+
 
 /* /////////////////////////////////  CART WITH  COUNTER ///////////// */
 
@@ -638,10 +817,10 @@ width: 100%;
 }
 
 
+/* //////////////////////////////////////////////////////////////////// */
 
 
-
-
+/* ///////      FLASH SALE         ////////////////////////// */
 
 
 
@@ -769,7 +948,7 @@ margin-top: 50px;
 }
 
 
-.flash-sale{
+#home-flashsale{
  margin-left: 20px;
  margin-bottom: 10px;
  position: relative;
@@ -777,12 +956,12 @@ margin-top: 50px;
 
 }
 
-.flash-sale h6{
+#home-flashsale  h6{
 margin-top: 20px;
 font-size: 20px;
 color: #FFFFFF;
 }
-.flash-sale a {
+#home-flashsale a {
   background: rgb(255, 255, 255);
   padding: 5px 10px;
   position: absolute;
@@ -793,7 +972,7 @@ color: #FFFFFF;
   border-radius: 5px;
 }
 
-.flash-sale i{
+#home-flashsale i{
    font-size: 20px;
    margin-right: 5px;
  }
