@@ -592,7 +592,7 @@ width: 100%;
 }
 
 
-/* //////////////////////   FLASH BANNER  PAGE /////////////////// */
+/* //////////////////////   FLASH BANNER  for PAGE /////////////////// */
 
 
 
@@ -740,33 +740,7 @@ width: 100%;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ......................................................... */
-
-
-
-
-
-
 
 
 
@@ -793,8 +767,6 @@ width: 100%;
 }
 
 
-
-
 .cart-nav .icon{
   color: #ff7979;
 }
@@ -818,30 +790,6 @@ width: 100%;
 
 
 /* //////////////////////////////////////////////////////////////////// */
-
-
-/* ///////      FLASH SALE         ////////////////////////// */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -915,7 +863,12 @@ width: 100%;
   background: white;
   border-radius: 5px;
 }
-
+#home-category .plate a{
+  text-decoration:none ;
+  font-size: 16px;
+  color: #0f0f0f;
+  line-height: 80px;
+}
 #home-category {
 
  
@@ -993,6 +946,158 @@ color: #FFFFFF;
   margin-top: 20px;
   margin-bottom: 20px;
  }
+
+
+/* /////////////////////////      Category for single category page   /////// */
+
+
+
+
+
+
+
+
+#single-category-banner{
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  
+}
+
+
+
+#single-category-banner .baheader {
+  position:relative;
+  text-align:center;
+  color:white;
+  padding: 50px 15px;
+  
+}
+
+
+
+#single-category-banner .baheader h1{
+  font-size: 34px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+}
+
+#single-category-banner .baheader  a{
+  color: white;
+}
+
+
+
+
+#single-category-banner .baheader #banner{
+  width: 100%;
+  
+  background: rgb(253, 253, 253);
+  border-radius: 10px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+#single-category-banner .baheader #banner img{
+  width: 100%;
+  height: 100%
+}
+  #single-category-banner .logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+#single-category-banner .inner-header {
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+#single-category-banner .flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#single-category-banner .waves {
+  position:relative;
+  width: 100%;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:40px;
+  max-height:40px;
+  padding: 0px!important;
+}
+
+#single-category-banner .content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  #single-category-banner .waves {
+    height:40px;
+    min-height:40px;
+  }
+  #single-category-banner .content {
+    height:20vh;
+  }
+    #single-category-banner h1 {
+    font-size:24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
 
