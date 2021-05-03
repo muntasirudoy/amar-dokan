@@ -1084,6 +1084,68 @@ color: #FFFFFF;
   }
 }
 
+/*   SINGLE CATEGORY MAIN CONTENT START  */
+
+
+
+#main-content{
+  margin-top: 50px;
+}
+
+#main-content .search{
+  height: 60px;
+  background: #0f0f0f;
+}
+#main-content .sort{
+  height: 60px;
+  background: #750023;
+}
+
+#main-content .row2{
+  margin-top: 20px;
+  
+}
+
+#main-content .left {
+  padding: 15px;
+  height: 100vh;
+  background: rgb(248, 248, 248);
+}
+
+#main-content .left h2{
+  border: 1px solid var(--sborder);
+  padding: 10px;
+  font-size: 18px;
+  color: var(--sfont);
+  font-weight: 600;
+}
+#main-content .left .categorys ul li{
+  font-size: 16px;
+  list-style: square;
+  padding: 5px 0px;
+}
+
+#main-content .left .price .pfilter{
+  display: flex;
+  
+}
+
+#main-content .left .price input{
+ width: 100%;
+}
+
+
+
+
+#main-content .right {
+
+}
+#main-content .right .card{
+height: 280px;
+background: red;
+border-radius: 5px;
+margin: 10px;
+}
 
 
 
@@ -1097,6 +1159,18 @@ color: #FFFFFF;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////            SINGLE CATEGORY PAGE END      ///////////////////// */
 
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
