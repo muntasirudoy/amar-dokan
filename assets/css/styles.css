@@ -26,7 +26,7 @@
 
 
 body {
-  background: rgba(248, 248, 248, 0.527);
+
   
 }
 
@@ -1053,6 +1053,7 @@ color: #FFFFFF;
 .parallax > use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 7s;
+
 }
 .parallax > use:nth-child(2) {
   animation-delay: -3s;
@@ -1093,7 +1094,7 @@ color: #FFFFFF;
 
 
  #main-content{
-  margin-top: 300px;
+  margin-top: 280px;
 
   
 }
@@ -1102,13 +1103,17 @@ color: #FFFFFF;
 
  #main-content .filter{
    background: #fff;
-   margin-top: 5px;
-width: 96%;
+margin: 10px;
+width: 95%;
    
    height: 100vh;
    border: 1px solid rgba(0, 0, 0, 0.075);
  }
-
+ #main-content .total-products{
+   margin-top: 10px;
+   margin-left: 20px;
+   margin-bottom: 0px;
+ }
  
 
  #main-content .filter .sCategory h5{
@@ -1222,12 +1227,15 @@ padding-left: 25px;
  border-radius: none;
  border: 1px solid rgba(0, 0, 0, 0.075);
  background: #fff;
- transition: 0.2s ease-in;
- margin: 5px;
+ transition: 0.5s ease;
+ width: 90%;
+ border-radius: 5px;
+ cursor:pointer;
+ margin: 10px;
 
 }
 #main-content .plate:hover{
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   transform: scale(1.02);
  
  }
@@ -1238,7 +1246,9 @@ padding-left: 25px;
    height: 60px;
    margin-bottom: 20px;
  }
-
+ #main-content .all{
+   padding: 0px 10px;
+ }
 
 
 /* /////////////            SINGLE CATEGORY PAGE END      ///////////////////// */
