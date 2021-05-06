@@ -47,7 +47,7 @@
   }
   #main-content .top-content .left {
     display: flex;
-    line-height: 60px;
+    
   }
   #main-content .top-content .left img{
     width: 20px;
@@ -184,7 +184,7 @@
 }
 #main-content .top-content .left {
   display: flex;
-  line-height: 60px;
+  
 }
 #main-content .top-content .left img{
   width: 20px;
@@ -201,6 +201,7 @@
 }
 #main-content .all{
 display: flex;
+justify-content: space-evenly;
 
 }
 

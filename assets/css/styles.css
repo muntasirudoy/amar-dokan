@@ -1257,11 +1257,22 @@ padding-left: 25px;
    border: 1px solid rgba(0, 0, 0, 0.075);
    height: 60px;
    margin-bottom: 20px;
+   display: flex;
+   justify-content: space-between;
  }
  #main-content .all{
    padding: 0px 10px;
  }
 
+ #main-content .top-content .right a{
+   display: inline-block;
+   padding: 5px 10px ;
+   background: #3f3f3f;
+   color: #fff;
+   font-size: 14px;
+   margin-left: 5px;
+   border-radius: 5px;
+ }
 
 /* /////////////            SINGLE CATEGORY PAGE END      ///////////////////// */
 
