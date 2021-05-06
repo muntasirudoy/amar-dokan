@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 /*========== BASE ==========*/
 *, ::before, ::after {
@@ -25,7 +26,7 @@
 
 
 body {
-  
+  background: rgba(248, 248, 248, 0.527);
   
 }
 
@@ -955,11 +956,12 @@ color: #FFFFFF;
 
 
 
-
-
 #single-category-banner{
   background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-  
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 5555;
 }
 
 
@@ -968,9 +970,11 @@ color: #FFFFFF;
   position:relative;
   text-align:center;
   color:white;
-  padding: 50px 15px;
-  
+  padding: 100px 15px 20px 15px;
+  display: flex;
+
 }
+
 
 
 
@@ -1088,88 +1092,152 @@ color: #FFFFFF;
 
 
 
-#main-content{
-  margin-top: 50px;
-}
+ #main-content{
+  margin-top: 300px;
 
-#main-content .search{
-  height: 60px;
-  background: #fafafa;
-}
-#main-content .sort{
-  height: 60px;
-  background: #f1f1f1;
-}
-
-#main-content .row2{
-  margin-top: 20px;
   
 }
 
-#main-content .left {
-  padding: 15px;
-  height: 100vh;
-  background: rgb(248, 248, 248);
+
+
+ #main-content .filter{
+   background: #fff;
+   margin-top: 5px;
+width: 96%;
+   
+   height: 100vh;
+   border: 1px solid rgba(0, 0, 0, 0.075);
+ }
+
+ 
+
+ #main-content .filter .sCategory h5{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   font-size: 16px;
+   padding:  10px 15px;
+   margin: 0px;
+   color: #333;
+   font-family: 'Noto Sans', sans-serif;
+   
+ }
+
+
+ #main-content .sCategory ul {
+padding-left: 25px;
+ }
+ #main-content .filter .sCategory ul li{
+  
+   }
+ #main-content .filter .sCategory ul li a{
+  display: inline-block;
+  color: #333;
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 12px;
+   }
+   #main-content .filter .sCategory ul li span{
+    display: inline-block;
+    color: #333;
+     font-family: 'Noto Sans', sans-serif;
+     font-size: 10px;
+     color: rgba(255, 0, 0, 0.562);
+     margin-left: 10px;
+     }
+#main-content .filter .sPrice{
+  border:1px solid rgba(0, 0, 0, 0.1)!important; 
+  border-left: none!important;
+  border-right: none!important;
 }
 
-#main-content .left h2{
-  border: 1px solid var(--sborder);
-  padding: 10px;
-  font-size: 18px;
-  color: var(--sfont);
-  font-weight: 600;
-}
 
-#main-content .left ul {
-  padding: 00px 10px ;
-}
-#main-content .left ul li{
-  list-style: square;
-}
-
-
-#main-content .left ul li a{
-  text-decoration: none;
-  color: #4e4e4e;
-  font-size: 14px;
-}
-
-
-#main-content .left ul li a span{
-
-color: #777777;
-font-size: 12px;
+#main-content .filter .sPrice h5{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  padding:  10px 15px;
+  margin: 0px;
+  color: #333;
+  font-family: 'Noto Sans', sans-serif;
 
 }
-#main-content .right {
+
+
+#main-content .filter .sPrice .form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.9rem + 2px);
+  padding: 0.45rem 0.85rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.37rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
 
 }
-#main-content .right .card{
-height: 280px;
-background: red;
-border-radius: 5px;
-margin: 10px;
+#main-content .filter .sPrice .form-row{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+#main-content .filter .sPrice .form-group{
+  
+ margin: 0px 2px;
+  
+}
+#main-content .filter .sPrice .form-control{
+  height: 35px;
+}
+#main-content .filter .sPrice .form-control:focus {
+  color: none;
+  background-color: rgb(255, 255, 255);
+  border-color:none;
+  outline: ;
+ 
+}
+#main-content .filter .sPrice label{
+  font-size: 12px;
+  color: #333;
+  font-family: 'Noto Sans', sans-serif;
+}
+#main-content .filter .sPrice .btn{
+  background: var(--sbtn);
+  padding: 5px!important;
+  
+  color: #fff;
+  font-size: 12px;
+  margin: 0px;
+  line-height: 1;
+  display: inline-block;
+  margin-top: 10px;
+
 }
 
-#main-content .row1 .plate{
-  height: 100px;
-  background: red;
-  border-radius: 5px;
-  margin: 10px;
+
+
+#main-content .plate{
+ height: 270px;
+ border-radius: none;
+ border: 1px solid rgba(0, 0, 0, 0.075);
+ background: #fff;
+ transition: 0.2s ease-in;
+ margin: 5px;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+#main-content .plate:hover{
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+ 
+ }
+ 
+ #main-content .top-content{
+   background: rgb(255, 255, 255);
+   border: 1px solid rgba(0, 0, 0, 0.075);
+   height: 60px;
+   margin-bottom: 20px;
+ }
 
 
 
