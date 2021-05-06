@@ -31,7 +31,12 @@
     text-align: center;
    line-height: 30px;
   }
+ /* ////////////        category    content              */
 
+
+ #main-content {
+  margin-top: 30px;
+}
   #main-content .filter{
     display: none;
 
