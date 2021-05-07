@@ -85,6 +85,34 @@
  
     margin-right: 0px;
   }
+  #single-product .image {
+    width: 100%;
+  }  
+  #single-product .details h1 {
+    font-size: 20px;
+    
+}
+
+
+#single-product .details ul li span {
+  margin-right: 16px;
+}
+
+#single-product .details h2 {
+  font-size: 26px;
+}
+#single-product .details .vat {
+  font-size: 14px;
+}
+#single-product .details .short-description h4 {
+  font-size: 16px;
+
+}
+  #single-product .details .short-description ul li {
+  font-size:14px ;
+}
+
+
 
 
 
