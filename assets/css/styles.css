@@ -1622,7 +1622,7 @@ border: 1px solid rgba(0, 0, 0, .2);
 #single-product .details{
 width: 98%;
   
-  height: 500px;
+  
 }
 
 #single-product .top-content{
@@ -1829,9 +1829,10 @@ justify-content: space-between;
   display: inline-block;
   background: saddlebrown;
   font-size: 18px;
-  padding: 10px 20px ;
+  padding: 0 20px ;
 color: #fff;
 font-weight: 600;
+line-height: 50px;
 }
 
 
@@ -1873,8 +1874,16 @@ font-size: 18px;
 .inc:hover {
   cursor: pointer;
 }
-
-
+#related-product {
+  margin-top: 50px;
+  
+  
+}
+#related-product .pcard{
+height: 200px;
+background: seagreen;
+margin: 10px;
+}
 
 
 
