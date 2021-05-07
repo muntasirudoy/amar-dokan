@@ -19,11 +19,16 @@
 }
 
 
+.row {
 
+  margin-right: 0px;
+  margin-left: 0px;
+}
 
+.row {
+  --bs-gutter-x: 0rem;
 
-
-
+}
 
 body {
 
@@ -592,8 +597,73 @@ width: 100%;
   }
 }
 
+/* /////////////////          Home flash              ////////////// */
 
-/* //////////////////////   FLASH BANNER  for PAGE /////////////////// */
+#home-flashsale {
+
+  margin-top: 50px;
+  
+  }
+  
+  
+  #home-flashsale{
+   margin-left: 20px;
+   margin-bottom: 10px;
+   position: relative;
+   display: flex;
+  
+  }
+  
+  #home-flashsale  h6{
+  margin-top: 20px;
+  font-size: 20px;
+  color: #FFFFFF;
+  }
+  #home-flashsale a {
+    background: rgb(255, 255, 255);
+    padding: 5px 10px;
+    position: absolute;
+    right: 20px;
+    color: #F00;
+    font-size: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  
+  #home-flashsale .card {
+    /* position: relative; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #ebecf0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////   FLASH BANNER  for individual page /////////////////// */
 
 
 
@@ -746,6 +816,9 @@ width: 100%;
 
 
 
+
+
+
 /* /////////////////////////////////  CART WITH  COUNTER ///////////// */
 
 
@@ -890,63 +963,6 @@ width: 100%;
 }
 /* ................................................. */
 
-#home-flashsale {
-  
-  width: 100%;
-  background:url(../img/flash-sale/1x/BACKGROUND\ 1.png) center no-repeat;
-  background-size: cover;
-  height: 150px;
-margin-bottom: 100px;
-margin-top: 50px;
-
-}
-
-
-#home-flashsale{
- margin-left: 20px;
- margin-bottom: 10px;
- position: relative;
- display: flex;
-
-}
-
-#home-flashsale  h6{
-margin-top: 20px;
-font-size: 20px;
-color: #FFFFFF;
-}
-#home-flashsale a {
-  background: rgb(255, 255, 255);
-  padding: 5px 10px;
-  position: absolute;
-  right: 20px;
-  color: #F00;
-  font-size: 12px;
-  margin-top: 20px;
-  border-radius: 5px;
-}
-
-#home-flashsale i{
-   font-size: 20px;
-   margin-right: 5px;
- }
- 
-#home-flashsale .all-items{
- width: 100%;
- display: flex;
-}
-
-.row {
-  --bs-gutter-x: 0px;}
-#home-flashsale .all-items .card{
-  width: 120px;
-  height: 140px;
-  background: rgb(243, 243, 243);
-  border-radius: 10px;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
- }
 
 
 /* /////////////////////////      Category for single category page   /////// */
@@ -1100,20 +1116,51 @@ color: #FFFFFF;
 }
 
 
-
+#main-content .top-content img{
+  display: none;
+}
+#main-content .top-content .right{
+  align-self: center;
+  margin-right: 20px;
+}
  #main-content .filter{
    background: #fff;
-margin: 10px;
-width: 95%;
-   
    border: 1px solid rgba(0, 0, 0, 0.075);
+   height: 100%;
  }
+
+ #main-content .top-content{
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  height: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#main-content .top-content .right a{
+  display: inline-block;
+  padding: 5px 10px ;
+  background: #3f3f3f;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+
+
+
  #main-content .total-products{
    margin-top: 10px;
    margin-left: 20px;
    margin-bottom: 0px;
  }
  
+
+
+
 
  #main-content .filter .sCategory h5{
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1122,7 +1169,6 @@ width: 95%;
    margin: 0px;
    color: #333;
    font-family: 'Noto Sans', sans-serif;
-   
  }
 
 
@@ -1210,9 +1256,7 @@ padding-left: 25px;
 #main-content .filter .sPrice .form-control:focus {
   color: none;
   background-color: rgb(255, 255, 255);
-  border-color:none;
-  outline: ;
- 
+  border-color:none; 
 }
 #main-content .filter .sPrice label{
   font-size: 12px;
@@ -1234,46 +1278,109 @@ padding-left: 25px;
 }
 
 
-
-#main-content .plate{
- height: 270px;
- border-radius: none;
- border: 1px solid rgba(0, 0, 0, 0.075);
- background: #fff;
- transition: 0.5s ease;
- width: 90%;
- border-radius: 5px;
- cursor:pointer;
- margin: 10px;
+#main-content .pcard{
+  height: 200px;
+  background: red;
+  margin:  10px;
 
 }
-#main-content .plate:hover{
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  transform: scale(1.02);
+
  
- }
- 
- #main-content .top-content{
-   background: rgb(255, 255, 255);
-   border: 1px solid rgba(0, 0, 0, 0.075);
-   height: 60px;
-   margin-bottom: 20px;
-   display: flex;
-   justify-content: space-between;
- }
- #main-content .all{
-   padding: 0px 10px;
+
+
+#main-content .top-content .left h5 {
+  display: none;
+}
+
+#main-content .filter .size h5{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   font-size: 18px;
+   padding:  10px 15px;
+   margin: 0px;
+   color: #333;
+   font-family: 'Noto Sans', sans-serif;
  }
 
- #main-content .top-content .right a{
-   display: inline-block;
-   padding: 5px 10px ;
-   background: #3f3f3f;
-   color: #fff;
-   font-size: 14px;
-   margin-left: 5px;
-   border-radius: 5px;
+
+
+ #main-content .ninty{
+   margin: 10px;
+  display: flex;
  }
+  #main-content .filter .size .fifteen{
+  
+  position:relative;
+  
+}
+  #main-content .filter .size .size-bg {
+   background: #e3e3e3;
+ }
+ 
+  #main-content .filter .size .input-img input[type=radio],
+   #main-content .filter .size .input-img input[type=checkbox] {
+   opacity: 0;
+ }
+ 
+  #main-content .filter .size .input-img input:checked+.size-check {
+   background: orange;
+ }
+ 
+  #main-content .filter .size .size-check {
+   cursor: pointer;
+   position: relative;
+   border-radius: 60px;
+   float: left;
+   width: 30px;
+   height: 30px;
+   text-align: center;
+   color: #fff;
+   font-size:14px;
+   line-height: 30px;
+   box-sizing:border-box;   
+ }
+
+ #main-content .filter .review h5{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+   font-size: 18px;
+   padding:  10px 15px;
+   margin: 0px;
+   color: #333;
+   font-family: 'Noto Sans', sans-serif;
+ }
+
+
+ #main-content .filter .review .star ul li span{
+  padding: 5px 10px;
+  font-size: 14px;
+}
+#main-content .filter .review .star ul li i{
+  color: rgb(255, 145, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* /////////////            SINGLE CATEGORY PAGE END      ///////////////////// */
 
@@ -1285,6 +1392,12 @@ padding-left: 25px;
   margin-top: 50px;
   width: 100%;
 }
+
+
+
+
+
+
 #top-products .section-name{
 
   margin-left: 15px;
@@ -1321,8 +1434,6 @@ padding-left: 25px;
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
-
-  
 }
 #top-products  .container {
   padding: 0px;
@@ -2281,7 +2392,7 @@ a.remove:hover {
 
 
 
-
+/* /////////////////// */
 
 
 
