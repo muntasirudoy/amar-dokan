@@ -31,6 +31,26 @@
     text-align: center;
    line-height: 30px;
   }
+/* ////////////////////  banner part ////////////////////// */
+
+#home-banner .inner-header {
+ 
+}
+
+
+
+#home-banner .baheader #banner {
+
+  height: 180px;
+  border-radius: 5px;
+ 
+
+}
+
+
+
+
+
  /* ////////////        category    content              */
 
 
@@ -42,8 +62,9 @@
 
 
  #home-category .plate p{
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 3px;
+  font-weight: 500;
 
  }
 

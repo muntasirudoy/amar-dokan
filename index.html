@@ -39,8 +39,9 @@ of Simple CSS Waves-->
                 </div>
                 <div class="src">
                   <label for="sub-nav" class="sub-nav-toggle"><span> <i class="fa fa-search" aria-hidden="true"></i>  </span></label>
-
                 </div>
+                
+
            </div>
             
             <!--search-icon---------------------->
@@ -220,10 +221,10 @@ of Simple CSS Waves-->
       <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
       </defs>
       <g class="parallax">
-      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="#edededf1" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="#f3f1f1f1" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="#f5f5f5e9" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#f3f3f3f1" />
       </g>
       </svg>
       </div>
@@ -241,16 +242,27 @@ of Simple CSS Waves-->
 <!-- 
                                       CART WITH COUNTER                                   
  -->
+
  
+<div class="cart-nav">
+  <div class="icon"> <i class="fa fa-shopping-basket" aria-hidden="true"></i></div>
+  <div class="item-count"><p>0</p></div>
+</div>
 
 
+
+
+
+
+
+<!-- 
  <div class="cart-nav">
   <div class="icon">
     <i class="fa fa-shopping-basket" aria-hidden="true"></i>
   
   </div>
   <div class="item-count">0</div>
-</div>
+</div> -->
 
 
 
@@ -275,7 +287,7 @@ of Simple CSS Waves-->
     <h6>Category</h6>
     <a class="" href="">View all</a>
 </div>
-    <div class="row all-category ">
+    <div class="row all-category  ">
 
         <div class="col-4 col-lg-2 ">
        <div class="plate">
@@ -347,32 +359,39 @@ of Simple CSS Waves-->
 
 <section id="home-flashsale">
     <div class="container">
+   <div class="row">
+     <div class="col-lg-3">
+       <div class="heading">
+         <h2>Deals & Offer</h2>
+         <p>Hygiene equipments </p>
+         <div class="counter">
+           <div class="day cc">123</div>
+           <div class="hour cc">12</div>
+           <div class="min cc">34</div>
+           <div class="sec cc">17</div>
+         </div>
+       </div>
+     </div>
 
+     <div class="col-lg-8">
+       <div class="row">
+         <div class="col-6"><div class="plate"></div></div>
+         <div class="col-6"><div class="plate"></div></div>
+         <div class="col-6"><div class="plate"></div></div>
+         <div class="col-6"><div class="plate"></div></div>
+         <div class="col-6"><div class="plate"></div></div>
+         <div class="col-6"><div class="plate"></div></div>
+         <div class="col-6"><div class="plate"></div></div>
+         <div class="col-6"><div class="plate"></div></div>
+         <div class="col-6"><div class="plate"></div></div>
+         <div class="col-6"><div class="plate"></div></div>
 
-   </div>
-   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       </div>
+    </div>
 
 
 </div>
-</section> 
+ </section>  
 
 <!-- ...................................................FLASH SALE END ......................................-->
 
@@ -393,7 +412,7 @@ of Simple CSS Waves-->
               <div class="pcard item">
                    
                  <div class="img"> 
-                     <img src="assets/img/one.jpg alt="">
+                     <img src="assets/img/one.jpg">
                  </div> 
                  <div class="price">
                     <div class="old-price"> 120$</div>
@@ -923,28 +942,6 @@ of Simple CSS Waves-->
         <script src="assets/js/product card.js"></script>
         <script src="assets/js/scripts.js"></script>
         
-
-        
-
-
-
-         <script>
-
-            $(document).ready(function(){
-              $('.on').click(function(){
-                $('.plate').slideToggle("500")
-              })
-            }); 
-
-            $(document).on('click',function(e){
-             if(!(($(e.target).closest(".plate").length > 0 ) || ($(e.target).closest(".on").length > 0))){
-              $(".plate").hide();
-          }
-            });
-
-         </script>
-                        
-
 
     </body>
 </html>
