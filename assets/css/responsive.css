@@ -34,6 +34,25 @@
  /* ////////////        category    content              */
 
 
+ #home-category .plate{
+  height:80px;
+
+ }
+
+
+
+ #home-category .plate p{
+  
+
+ }
+
+
+
+
+
+
+
+
  #main-content {
   margin-top: 30px;
 }
@@ -102,9 +121,7 @@
 #single-product .details ul li .order{
   color: green;
 }
-#single-product .details ul li i{
-  color: rgb(255, 123, 0);
-}
+
 
 #single-product .details h2 {
   font-size: 26px;
@@ -192,7 +209,8 @@
 }
 
 
-
+#home-category .plate{
+  height:100px;
 
 
 
@@ -235,7 +253,8 @@
     margin-top: 10px;
   }
 
-
+  #home-category .plate{
+    height:110px;
 
 
 }
@@ -276,6 +295,20 @@
 
 
 
+
+
+}
+
+
+
+
+
+/* ////////////  upto 992px screen */
+
+
+@media screen and (min-width: 993px)  {
+
+#home categoru
 
 
 }
