@@ -35,14 +35,15 @@
 
 
  #home-category .plate{
-  height:80px;
+  height:100px;
 
  }
 
 
 
  #home-category .plate p{
-  
+  font-size: 12px;
+  margin-top: 3px;
 
  }
 
