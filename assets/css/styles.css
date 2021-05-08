@@ -1875,7 +1875,13 @@ font-size: 18px;
   cursor: pointer;
 }
 
+#single-product .details ul li i{
+  color: rgb(255, 123, 0);
+}
 
+#single-product .details ul li .order i{
+  color: rgb(2, 89, 5);
+}
 /* .............. */
 
 #sp-rev-de  {
@@ -2468,13 +2474,14 @@ img {
 
 .cf {
   *zoom: 1;
+  margin-top: 50px;
 }
 
 .wrap {
   width: 100%;
   margin: 0 auto;
   padding: 5% 0;
-  margin-bottom: 5em;
+  
 }
 
 .projTitle {
@@ -2562,12 +2569,10 @@ img {
   display: block;
   width: 100%;
   vertical-align: middle;
-  padding: 1.5em;
   border-bottom: 1px solid #fafafa;
-  background: rgb(236, 236, 236);
+  background: rgb(245, 245, 245);
   margin-bottom: 15px;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgb(228, 228, 228);
+   border: 1px solid rgb(228, 228, 228);
 }
 .cart .items.even {
   background: #fafafa;
@@ -2661,9 +2666,9 @@ a.remove {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-weight: bold;
-  background: #e0e0e0;
-  padding: .5em;
-  font-size: .75em;
+  background: #536a03c4;
+  padding: 10px;
+  font-size: 16px;
   display: inline-block;
   border-radius: 100%;
   line-height: .85;
@@ -2677,42 +2682,6 @@ a.remove:hover {
   background: #f30;
 }
 
-.promoCode {
-  border: 2px solid #efefef;
-  float: left;
-  width: 35%;
-  padding: 2%;
-}
-.promoCode label {
-  display: block;
-  width: 100%;
-  font-style: italic;
-  font-size: 1.15em;
-  margin-bottom: .5em;
-  letter-spacing: -.025em;
-}
-.promoCode input {
-  width: 85%;
-  font-size: 1em;
-  padding: .5em;
-  float: left;
-  border: 1px solid #dadada;
-}
-.promoCode input:active, .promoCode input:focus {
-  outline: 0;
-}
-.promoCode a.btn {
-  float: left;
-  width: 15%;
-  padding: .75em 0;
-  border-radius: 0 1em 1em 0;
-  text-align: center;
-  border: 1px solid #82ca9c;
-}
-.promoCode a.btn:hover {
-  border: 1px solid #f69679;
-  background: #f69679;
-}
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -2749,40 +2718,104 @@ a.remove:hover {
 .btn:hover:after, .btn:focus:after, .btn:active:after {
   right: -10px;
 }
-.promoCode .btn {
-  font-size: .85em;
-  paddding: .5em 2em;
-}
+
 
 /* TOTAL AND CHECKOUT  */
 .subtotal {
-  float: right;
-  width: 35%;
-}
-.subtotal .totalRow {
-  padding: .5em;
-  text-align: right;
-}
-.subtotal .totalRow.final {
-  font-size: 1.25em;
-  font-weight: bold;
-}
-.subtotal .totalRow span {
-  display: inline-block;
-  padding: 0 0 0 1em;
-  text-align: right;
-}
-.subtotal .totalRow .label {
-  font-family: "Montserrat", sans-serif;
-  font-size: .85em;
-  text-transform: uppercase;
-  color: #777;
-}
-.subtotal .totalRow .value {
-  letter-spacing: -.025em;
-  width: 35%;
+margin-top: 35px;
+
 }
 
+.subtotal{
+ 
+ 
+}
+
+.coupon {
+margin: 20px 10px;
+padding: 30px 20px;
+
+border: 2px solid #efefef;
+}
+
+
+.coupon label {
+  display: block;
+  width: 100%;
+  font-style: italic;
+  font-size: 1.15em;
+  margin-bottom: .5em;
+  letter-spacing: -.025em;
+  
+}
+ .coupon input {
+  
+  font-size: 1em;
+  padding: .5em;
+   width: 65%;
+  border: 1px solid #dadada;
+  border-radius: 50px;
+}
+ .coupon input:active, .promoCode input:focus {
+  outline: 0;
+  
+}
+ .coupon a.btn {
+  display: inline-block;
+  width: 30%;
+  padding: 6px 10px;
+  text-align: center;
+  border: 1px solid #82ca9c;
+  border-radius: none!important;
+  font-weight: 400;
+  font-size: 16px;
+}
+ .coupon a.btn:hover {
+  border: 1px solid #f69679;
+  background: #f69679;
+}
+
+.amount
+{
+  
+border: 2px solid #efefef;
+  padding:  20px 30px;
+  margin: 0PX 10px;
+}
+
+
+.sm{
+  display: flex;
+  justify-content: space-between;
+}
+.sm h4{
+  font-size: 18px;
+  
+}
+.sm-price p{
+  font-size: 24px;
+  margin-bottom: 0px;
+
+}
+.tt{
+ 
+border-top : 1px solid #efefef;
+  padding: 20px 0px;
+  font-weight: 700;
+  font-size:20px ;
+}
+
+.tt h4{
+  font-weight: 700;
+  font-size: 20px;
+}
+.pbtn a{
+  padding: 15px;
+  background: #6f6f6f;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
 @media only screen and (max-width: 39.375em) {
   .wrap {
     width: 98%;
@@ -2831,6 +2864,17 @@ a.remove:hover {
     text-align: center;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

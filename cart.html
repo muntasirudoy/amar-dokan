@@ -56,40 +56,7 @@
 
 
 
-<div class="row">
-  <div class="col-lg-12 col-sm-12 col-md-12">
-        <div class="bottom-nav">
-          <nav class="menu">
-            <input type="radio" name="menu" id="one" checked>
-            <input type="radio" name="menu" id="two">
-            <input type="radio" name="menu" id="three">
-            <div class="list">
-              <div class="link-wrap">
-                <label for="one" >
-                  <i class="fa fa-home" aria-hidden="true"></i>
-                  <span>Home</span>
-                </label>
-                <label class="on"  for="two">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                  <span>cart</span>
-                </label>
-                <label class="on2"  for="three">
-                  <i class="fa fa-mobile" aria-hidden="true"></i>
-                  <span>Contact</span>
-                </label>
-              </div>
-            </div>
-        </nav>
-      
-      <span></span>
-    </nav>
 
-    <div class="plate"></div>
-    <div class="plate2"></div>
- </div>
- <div class="menu-overlay"></div>
- </div>
-</div>
 
 
 
@@ -218,28 +185,26 @@
 
 
 <div class="container">
-  <div class="row">
-    <div class="col-lg-12 col-sm-12 col-md-12">
-
-<div class="wrap cf">
- 
-  <div class="heading cf">
-    <h1>My Cart</h1>
-    <a href="#" class="continue">Continue Shopping</a>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="heading cf">
+      <h1>My Cart</h1>
+      <a href="index.html" class="continue">Continue Shopping</a>
+    </div>
   </div>
+</div>
+
+
+<div class="row">
+<div class="col-lg-8">
+<div class="wrap cf">
   <div class="cart">
-<!--    <ul class="tableHead">
-      <li class="prodHeader">Product</li>
-      <li>Quantity</li>
-      <li>Total</li>
-       <li>Remove</li>
-    </ul>-->
     <ul class="cartWrap">
       <li class="items odd">
         
     <div class="infoWrap"> 
         <div class="cartSection">
-        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+        <img src="assets/img/one.jpg" alt="" class="itemImg" />
           <p class="itemNumber">#QUE-007544-002</p>
           <h3>Item Name 1</h3>
         
@@ -262,7 +227,7 @@
        <div class="infoWrap"> 
         <div class="cartSection">
          
-        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+        <img src="assets/img/two.jpg" alt="" class="itemImg" />
           <p class="itemNumber">#QUE-007544-002</p>
           <h3>Item Name 1</h3>
         
@@ -285,7 +250,7 @@
              <div class="infoWrap"> 
         <div class="cartSection">
             
-        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+        <img src="assets/img/three.jpg" alt="" class="itemImg" />
           <p class="itemNumber">#QUE-007544-002</p>
           <h3>Item Name 1</h3>
         
@@ -307,7 +272,7 @@
        <div class="infoWrap"> 
         <div class="cartSection info">
              
-        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+        <img src="assets/img/one.jpg" alt="" class="itemImg" />
           <p class="itemNumber">#QUE-007544-002</p>
           <h3>Item Name 1</h3>
         
@@ -326,7 +291,7 @@
            <a href="#" class="remove">x</a>
         </div>
          </div>
-         <div class="special"><div class="specialContent">Free gift with purchase!, gift wrap, etc!!</div></div>
+         
       </li>
       
       
@@ -335,21 +300,63 @@
     </ul>
   </div>
   
-  <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
-  <a href="#" class="btn"></a></div>
+
+</div>
+</div>
+
+<div class="col-lg-4">
+  <div class="subtotal">
+ <div class="row">
+   <div class="col-12">
+     <div class="coupon">
+      <label for="coupon">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
+      <a href="#" class="btn">Apply</a>
+
+     </div>
+   </div>
+ </div>
+
+ <div class="row">
+   <div class="col-12">
+     <div class="amount">
+    <div class="total-price sm">
+      <h4>Total price</h4>
+      <p>: 1289.TK</p>
+    </div>
+
+    <div class="total-price sm">
+      <h4>Shipping cost</h4>
+      <p>: 100.TK</p>
+    </div>
+
+    <div class="total-price sm">
+      <h4>Discount</h4>
+      <p>: 10%</p>
+    </div>
+
+    <div class="total-price sm">
+      <h4>VAT.</h4>
+      <p>: 5%</p>
+    </div>
+
+    <div class="total-price sm tt">
+      <h4>Total</h4>
+      <p>: 1032.TK</p>
+    </div>
+    
+    <div class="pbtn">
+      <a href="checkout.html">Continiue Purchace</a>
+    </div>
+    
+  </div>
+ </div>
   
-  <div class="subtotal cf">
-    <ul>
-      <li class="totalRow"><span class="label">Subtotal</span><span class="value">$35.00</span></li>
-      
-          <li class="totalRow"><span class="label">Shipping</span><span class="value">$5.00</span></li>
-      
-            <li class="totalRow"><span class="label">Tax</span><span class="value">$4.00</span></li>
-            <li class="totalRow final"><span class="label">Total</span><span class="value">$44.00</span></li>
-      <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
-    </ul>
+
+
+    
   </div>
 </div>
+
 </div>
 </div>
 </div>
