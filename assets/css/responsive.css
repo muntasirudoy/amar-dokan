@@ -56,7 +56,7 @@
 
  #home-category .plate{
   height:100px;
-
+  
  }
 
 
@@ -68,12 +68,33 @@
 
  }
 
+ #home-category .col-4,
+ #home-category .col-2{
+   padding: 5px;
+ }
 
 
+ #home-flashsale .heading {
+  
+  height: 200px;
+
+ }
+
+/* ///////////////////////////////    top category //////////////////////// */
 
 
+#top-category{
 
+}
 
+#top-products .pcard {
+    margin:0px
+
+}
+
+#top-products {
+  padding: 10px;
+}
 
  #main-content {
   margin-top: 30px;
