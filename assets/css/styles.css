@@ -1706,14 +1706,7 @@ padding-left: 25px;
   border: 1px solid var(--sborder);
   padding: 10px;
 }
-#top-products .pcard{
 
-  position: relative;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 #top-products  .container {
   padding: 0px;
  
@@ -1735,22 +1728,23 @@ padding-left: 25px;
  right:0px
 }
 #top-products .pcard {
-   
+/* width: 96%; */
+width: 100%;
 background: rgb(255, 255, 255);
-border-radius: 5px;
-height: 285px;
+
 display: flex;
 flex-direction: column;
 border: 1px solid rgb(236, 236, 236);
- box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
-padding: 10px;
+ 
+padding: 15px;
 position: relative;
-
+margin: 0px;
+/* margin-bottom: 7px; */
 
 }
 #top-products .pcard .img{
   background: rgb(230, 230, 230);
-  height: 140px;
+  height: 180px;
   width: 100%;
 }
 
@@ -1800,15 +1794,18 @@ position: relative;
 }
 
 #top-products .pcard button{
-  background: var(--sbtn);
-  color: white;
+  color: rgb(87, 87, 87);
   padding: 5px 10px;
-  border-radius: 5px;
   border: none;
   transition: .3s;
+  height: 40px;
+  background: white;
+  border: 1px solid rgb(170, 170, 170);
 }
 #top-products .pcard button:hover{
   background: rgb(243, 113, 113);
+  color: #fff;
+  border:none
 }
 
 
@@ -1845,14 +1842,13 @@ color: red;
 }
 
 
-#top-products .pcard .details .acart{
-  background: rgb(241, 241, 241);
-  border-radius: 5px;
+#top-products .pcard .details .add-to-cart{
   height: 30px;
   width: 65%;
   margin-left: 10px;
   cursor:pointer;
   transition: 0.3s all ease;
+  
 }
 
 
@@ -1896,7 +1892,10 @@ color: red;
 }
 
 
-
+#top-products  .col-lg-2{
+  display: flex;
+  justify-content:space-evenly;
+}
 
 
 
@@ -2423,7 +2422,6 @@ z-index: 2;
 
   
   z-index: -10;
-  border-radius: 0.75rem;
   opacity: .75;
 }
 
@@ -2458,7 +2456,7 @@ z-index: 2;
   border-radius: 10px;
   height: 130px;
   background: rgb(255, 255, 255);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: absolute;
   right: 10px;
   top: 50%;
@@ -2466,12 +2464,12 @@ z-index: 2;
 }
 
 #home-weekly-sale .details{
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(230, 230, 230);
  
   border-radius: 10px;
   width: 65%;
   height: 180px;
-  background: rgb(245, 245, 245);
+  background: rgb(255, 255, 255);
 }
 
 
@@ -2544,9 +2542,7 @@ z-index: 2;
 #home-cool-banner-2 .card-body {
   padding: 10px;
   background: red;
-  border-radius: 10px;
-  margin: 10px;
-  width: 94.5%;
+  width: 100%%;
 }
 
 #home-cool-banner-2 .coupon-text-wrap h5 {
