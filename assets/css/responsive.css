@@ -31,6 +31,18 @@
     text-align: center;
    line-height: 30px;
   }
+
+  #home-category .all-category{
+   padding: 0px 7px;
+    
+  }
+  #home-category .section-name::after {
+
+    width: 92%;
+  }
+  #home-category {
+    margin-top: 30px;
+  }
 /* ////////////////////  banner part ////////////////////// */
 
 #home-banner .inner-header {
