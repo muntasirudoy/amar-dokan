@@ -3413,7 +3413,7 @@ border-bottom: 1px solid #d8d8d8;
   /* Works well with 100% width  */
   width: 100%;
   font-size: 1.5em;
-  padding: 0 2.85em;
+  padding: 5px;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -3437,6 +3437,31 @@ border-bottom: 1px solid #d8d8d8;
   transition: transform var(--timeOut , var(--duration));
   
 }
+.menu__item:focus{
+  outline: none;
+  border: none;
+}
+
+
+
+.svg-icon {
+  width: 20px;
+  height:20px ;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #fdfdfd;
+}
+
+.svg-icon circle {
+  stroke: #fa8100;
+  stroke-width: 1;
+}
+
+
+
 
 .menu__item::before{
   
@@ -3528,3 +3553,8 @@ border-bottom: 1px solid #d8d8d8;
     display: none;
   }
 }
+
+
+
+/* /////////////////////   Login start /////////////////// */
+
